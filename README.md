@@ -18,19 +18,6 @@ This is my personal portfolio website designed to showcase my projects, technica
 * CSS3
 * JavaScript
 
-## 📂 Projects Included
-
-* **E-Learning Management System**
-
-  * Role-based system for students, faculty, and admin
-  * Course management and enrollment features
-  * Built using Java, Spring Boot , React and MySQL
-
-* **Rapid Mart Manager**
-
-  * Store management system with billing and stock tracking
-  * Developed using Java Swing and MySQL
-
 ## 💡 What I Learned
 
 * Building responsive layouts
