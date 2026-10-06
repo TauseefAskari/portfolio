@@ -10,13 +10,18 @@ This is my personal portfolio website designed to showcase my projects, technica
 * Clean and modern UI/UX ✨
 * Project showcase section with descriptions
 * Smooth navigation and animations
-* Contact section for easy communication
+* Light and dark themes that follow the system preference
+* Contact form powered by Web3Forms
 
 ## 🛠️ Technologies Used
 
 * HTML5
 * CSS3
 * JavaScript
+
+## Contact Form
+
+The contact form submits through Web3Forms. Manage the recipient email and access key in the Web3Forms dashboard.
 
 ## 💡 What I Learned
 

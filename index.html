@@ -4,7 +4,28 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Tauseef Askari — Software Developer</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<meta name="description" content="Portfolio of Tauseef Askari, a software developer in Lucknow, India. Explore full-stack projects, technical skills, experience, and contact details."/>
+<link rel="canonical" href="https://tauseefaskari.github.io/portfolio/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Tauseef Askari — Software Developer"/>
+<meta property="og:description" content="Explore software projects and experience from Tauseef Askari, a software developer based in Lucknow, India."/>
+<meta property="og:url" content="https://tauseefaskari.github.io/portfolio/"/>
+<meta property="og:image" content="https://tauseefaskari.github.io/portfolio/assets/Portfolio_image.jpg"/>
+<meta property="og:image:alt" content="Portrait of software developer Tauseef Askari"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Tauseef Askari — Software Developer"/>
+<meta name="twitter:description" content="Explore software projects and experience from Tauseef Askari, a software developer based in Lucknow, India."/>
+<meta name="twitter:image" content="https://tauseefaskari.github.io/portfolio/assets/Portfolio_image.jpg"/>
+<script>
+  try {
+    const savedTheme = localStorage.getItem('portfolio-theme');
+    if (savedTheme === 'light' || savedTheme === 'dark') {
+      document.documentElement.dataset.theme = savedTheme;
+    }
+  } catch {}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
 <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
@@ -12,30 +33,47 @@
 <!-- NAV -->
 <nav>
   <a href="#hero" class="nav-logo">TauseefAskari.dev</a>
-  <ul class="nav-links">
+  <ul class="nav-links" id="primary-navigation">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  <div class="nav-actions">
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+      <span class="theme-icon" aria-hidden="true">☾</span>
+    </button>
+    <button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation">
+      <span></span><span></span>
+    </button>
+  </div>
 </nav>
 
 <!-- HERO -->
 <section id="hero">
-  <div class="hero-eyebrow fade-in">Software Developer</div>
-  <h1 class="hero-title fade-in">Hi, I'm<br/><em>Tauseef Askari</em></h1>
-  <div class="hero-roles fade-in">
-    <span class="role-chip">Full-Stack</span>
-    <span class="role-sep">/</span>
-    <span class="role-chip">Backend</span>
-    <span class="role-sep">/</span>
-    <span class="role-chip">Open Source</span>
-  </div>
-  <p class="hero-subtitle fade-in">I build clean, efficient software — from full-stack web apps to backend systems that scale.</p>
-  <div class="hero-cta fade-in">
-    <a href="#projects" class="btn btn-primary">View my work</a>
-    <a href="#contact" class="btn btn-secondary">Get in touch</a>
+  <div class="hero-layout">
+    <div class="hero-copy">
+      <div class="hero-eyebrow fade-in">Software Developer</div>
+      <h1 class="hero-title fade-in">Hi, I'm<br/><em>Tauseef Askari</em></h1>
+      <div class="hero-roles fade-in">
+        <span class="role-chip">Full-Stack</span>
+        <span class="role-sep">/</span>
+        <span class="role-chip">Backend</span>
+        <span class="role-sep">/</span>
+        <span class="role-chip">Open Source</span>
+      </div>
+      <p class="hero-subtitle fade-in">I build clean, efficient software — from full-stack web apps to backend systems that scale.</p>
+      <div class="hero-cta fade-in">
+        <a href="#projects" class="btn btn-primary">Explore my work <span aria-hidden="true">↘</span></a>
+        <a href="#contact" class="btn btn-secondary">Get in touch</a>
+      </div>
+      <p class="hero-location fade-in"><span></span> Lucknow, India <b>·</b> Open to opportunities</p>
+    </div>
+    <figure class="hero-portrait fade-in">
+      <img src="assets/Portfolio_image.jpg" alt="Portrait of Tauseef Askari" fetchpriority="high">
+      <figcaption><span>Developer</span><span>Lucknow, IN</span></figcaption>
+    </figure>
   </div>
 </section>
 
@@ -47,11 +85,11 @@
   <h2 class="section-heading fade-in">Turning ideas into<br/>reliable software.</h2>
   <div class="about-grid fade-in">
     <div class="about-text">
-      <p>I'm a software developer with a passion for writing clean, maintainable code. I enjoy solving complex problems and building products that people actually use.</p>
-      <p>When I'm not coding, I'm exploring new technologies, contributing to open source, or reading about systems design.</p>
+      <p>I'm a software developer focused on Java backend development and full-stack web applications. I enjoy writing maintainable code and building practical tools with clear user workflows.</p>
+      <p>My projects range from role-based learning and store-management systems to browser-based utilities. Outside coding, I enjoy exploring new technologies and reading about systems design.</p>
     </div>
     <div class="about-aside">
-      <div class="about-detail"><div class="about-detail-label">Location</div><div class="about-detail-value">Lucknow , India</div></div>
+      <div class="about-detail"><div class="about-detail-label">Location</div><div class="about-detail-value">Lucknow, India</div></div>
       <div class="about-detail"><div class="about-detail-label">Education</div><div class="about-detail-value">B.Tech / Dr. A. P. J. Abdul Kalam Technical University, Lucknow
  </div></div>
       <div class="about-detail"><div class="about-detail-label">Availability</div><div class="about-detail-value">Open to opportunities</div></div>
@@ -107,59 +145,63 @@
       <div class="project-arrow">↗</div>
     </a> -->
 
-    <a href="#" class="project-item">
+    <article class="project-item">
       <div class="project-thumb thumb-beta">
         <div class="thumb-icon">
-          <img src="assets/48-Login-scaled.jpg.webp">
+          <img src="assets/48-Login-scaled.jpg.webp" alt="E-learning management system interface" loading="lazy">
         </div>
       </div>
       <div>
-        <div class="project-title">E-Learning Management System </div>
-        <div class="project-desc">A full-stack E-learning platform that allows students, professors, and admins to manage courses, enrollments, and learning activities through a role-based system.</div>
-        <div class="project-tech"><span>Java</span><span>SpringBoot</span><span>MySQL</span><span>React.js</span></div>
+        <div class="project-title">E-Learning Management System</div>
+        <div class="project-desc">A role-based learning platform where students, professors, and administrators can manage courses, enrollments, and learning activities.</div>
+        <div class="project-tech"><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>React</span></div>
       </div>
-      <div class="project-arrow">↗</div>
-    </a>
+    </article>
 
-    <a href="#" class="project-item">
+    <article class="project-item">
       <div class="project-thumb thumb-gamma">
         <div class="thumb-icon">
-          <img src="assets/Rapid_Mart.jpg">
+          <img src="assets/Rapid_Mart.jpg" alt="Shopping cart representing Rapid Mart Manager" loading="lazy">
         </div>
       </div>
       <div>
         <div class="project-title">Rapid Mart Manager</div>
-        <div class="project-desc">A Java-based store management system for efficient billing, sales tracking, and inventory management.</div>
+        <div class="project-desc">A Java desktop application for billing, sales tracking, and inventory management.</div>
         <div class="project-tech"><span>Java</span><span>Java Swing</span><span>MySQL</span></div>
       </div>
-      <div class="project-arrow">↗</div>
-    </a>
-     <a href="https://tauseefaskari.github.io/Currency-Converter/" class="project-item">
+    </article>
+    <article class="project-item">
       <div class="project-thumb thumb-gamma">
         <div class="thumb-icon">
-          <img src="assets/currency-converter.jpg">
+          <img src="assets/currency-converter.jpg" alt="Currency converter project preview" loading="lazy">
         </div>
       </div>
       <div>
         <div class="project-title">Currency converter</div>
-        <div class="project-desc">A responsive web application that allows users to convert currencies in real-time with an intuitive interface.</div>
-        <div class="project-tech"><span>HMTL</span><span>CSS</span><span>JavaScript</span></div>
+        <div class="project-desc">A responsive currency converter that fetches live exchange rates and presents conversions in a simple interface.</div>
+        <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
       </div>
-      <div class="project-arrow">↗</div>
-    </a>
-    <a href="https://tauseefaskari.github.io/QR-code-Generator/" class="project-item">
+      <div class="project-actions">
+        <a href="https://tauseefaskari.github.io/Currency-Converter/" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/TauseefAskari/Currency-Converter" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="project-item">
       <div class="project-thumb thumb-gamma">
         <div class="thumb-icon">
-          <img src="assets/qr_img.png">
+          <img src="assets/qr_img.png" alt="QR code generator project preview" loading="lazy">
         </div>
       </div>
       <div>
         <div class="project-title">QR Code Generator</div>
-        <div class="project-desc">Website to convert personal Information into QR codes for Securing Data.</div>
-        <div class="project-tech"><span>HMTL</span><span>CSS</span><span>JavaScript</span></div>
+        <div class="project-desc">Create scannable QR codes from text, URLs, and other information in a lightweight web app.</div>
+        <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
       </div>
-      <div class="project-arrow">↗</div>
-    </a>
+      <div class="project-actions">
+        <a href="https://tauseefaskari.github.io/QR-code-Generator/" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/TauseefAskari/QR-code-Generator" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
 
 
   </div>
@@ -178,7 +220,7 @@
     </div> -->
     <div class="exp-item">
       <div class="exp-period">2024 — 2025</div>
-      <div><div class="exp-role">Java Developer Intern</div><div class="exp-company">Analyze Infotech</div><div class="exp-desc">Worked on the backend API team. Implemented a feature that improved data processing speed. Wrote unit tests and documentation.</div></div>
+      <div><div class="exp-role">Java Developer Intern</div><div class="exp-company">Analyze Infotech</div><div class="exp-desc">Contributed to the backend API team, implemented a feature to improve data-processing speed, and wrote unit tests and documentation.</div></div>
     </div>
     <div class="exp-item">
       <div class="exp-period">2021 — 2025</div>
@@ -194,11 +236,30 @@
   <p class="section-label fade-in">Contact</p>
   <h2 class="section-heading fade-in">Let's work<br/>together.</h2>
   <p class="contact-sub fade-in">I'm currently open to full-time roles and interesting freelance projects. Say hello!</p>
+  <form id="contact-form" class="contact-form fade-in" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="62b9ed4e-3e63-4b33-91fa-fc32a07100e1">
+    <input type="hidden" name="subject" value="New message from your portfolio">
+    <input type="checkbox" name="botcheck" class="hidden-field" tabindex="-1" autocomplete="off">
+    <div class="form-field">
+      <label for="contact-name">Name</label>
+      <input id="contact-name" name="name" type="text" autocomplete="name" required>
+    </div>
+    <div class="form-field">
+      <label for="contact-email">Email</label>
+      <input id="contact-email" name="email" type="email" autocomplete="email" required>
+    </div>
+    <div class="form-field">
+      <label for="contact-message">Message</label>
+      <textarea id="contact-message" name="message" rows="5" required></textarea>
+    </div>
+    <button class="contact-submit" type="submit">Send message <span aria-hidden="true">↗</span></button>
+    <p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
+  </form>
   <div class="contact-links fade-in">
     <a href="mailto:tauseefaskari110@gmail.com" class="contact-link">Gmail</a>
-    <a href="https://github.com/tauseefaskari" class="contact-link" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/tauseef-askari/" class="contact-link" target="_blank">LinkedIn</a>
-    <a href="assets/Tauseef_Askari_Resume.pdf" class="contact-link">Download CV</a>
+    <a href="https://github.com/tauseefaskari" class="contact-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://linkedin.com/in/tauseef-askari/" class="contact-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://drive.google.com/uc?export=download&amp;id=1TL8bpbbPppFjLR0e9YibpIXlEHghMXQi" class="contact-link" target="_blank" rel="noopener noreferrer">Download CV</a>
   </div>
 </section>
 
@@ -223,9 +284,8 @@
     <div class="footer-nav-col">
       <h4>Connect</h4>
       <ul>
-        <li><a href="https://github.com/tauseefaskari" target="_blank">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/tauseef-askari/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://twitter.com/yourhandle" target="_blank">Twitter / X</a></li>
+        <li><a href="https://github.com/tauseefaskari" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/tauseef-askari/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         <li><a href="mailto:tauseefaskari110@gmail.com">Gmail</a></li>
       </ul>
     </div>
