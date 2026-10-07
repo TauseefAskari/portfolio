@@ -156,8 +156,7 @@ section { padding: 7rem 3rem; max-width: 1160px; margin: 0 auto; }
 .hero-portrait { position: relative; isolation: isolate; max-width: 390px; width: 100%; justify-self: end; padding: 1rem; background: var(--accent); }
 .hero-portrait::before { content: ''; position: absolute; z-index: -1; inset: 1.5rem -1rem -1rem 1.5rem; border: 1px solid var(--black); }
 .hero-portrait img { display: block; width: 100%; aspect-ratio: 0.88; object-fit: cover; object-position: center 34%; background: #dbe7eb; }
-.hero-portrait figcaption { display: flex; justify-content: space-between; gap: 1rem; padding-top: 0.75rem; font: 11px var(--mono); text-transform: uppercase; }
-.hero-portrait figcaption span:last-child { color: var(--gray-600); }
+.hero-portrait figcaption { display: flex; justify-content: space-between; gap: 1rem; padding-top: 0.75rem; color: var(--accent-ink); font: 11px var(--mono); text-transform: uppercase; }
 
 /* Bold role tags below name */
 .hero-roles {
@@ -248,6 +247,7 @@ section.in-view .section-heading::after { width: 100%; }
   font-family: var(--serif); font-size: 28px;
   color: rgba(0,0,0,0.18); font-style: italic; user-select: none;
 }
+.quick-post-mark { color: var(--accent-ink); font: 500 42px/0.95 var(--serif); text-align: center; }
 
 .project-item > div:nth-child(2) { padding: 1.15rem 1.25rem 1.25rem; }
 .project-title { font-family: var(--serif); font-size: 24px; margin-bottom: 0.35rem; letter-spacing: 0; transition: color 0.2s; }
