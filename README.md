@@ -31,7 +31,7 @@ The contact form submits through Web3Forms. Manage the recipient email and acces
 * Structuring real-world frontend projects
 
 ## 🔗 Live Demo
-
+* Link: https://tauseefaskari.github.io/portfolio/
 
 
 ## 📬 Contact
